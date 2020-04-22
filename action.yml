@@ -3,4 +3,4 @@ description: 'run cpu unitest'
 runs:
   using: 'docker'
   image: 'ccr.ccs.tencentyun.com/mmspr/turbo_transformers:test-release'
-  entrypoint: 'entrypoint.sh'
+  entrypoint: '/workspace/entrypoint.sh'
