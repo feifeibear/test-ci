@@ -2,5 +2,5 @@ name: run-cpu-unitest
 description: 'run cpu unitest'
 runs:
   using: 'docker'
-  image: 'tools/docker/Dockerfile_release.cpu'
+  image: 'ccr.ccs.tencentyun.com/mmspr/turbo_transformers:test-release'
   entrypoint: 'entrypoint.sh'
