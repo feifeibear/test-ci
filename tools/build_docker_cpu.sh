@@ -19,6 +19,10 @@ set -xe
 VERSION=$(cat ../CMakeLists.txt | grep turbo_transformers_VERSION | \
     sed 's#set(turbo_transformers_VERSION ##g' | sed 's#)##g')
 
+if [ -z $VERSION ]; then
+  VERSION=test
+fi
+
 if [ -z $BUILD_TYPE ]; then
   BUILD_TYPE=release
 fi
