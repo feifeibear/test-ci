@@ -16,5 +16,5 @@ RUN pip --no-cache-dir install contexttimer future transformers docopt
 WORKDIR /workspace
 
 COPY entrypoint.sh entrypoint.sh
-ENTRYPOINT ["bash /entrypoint.sh"]
+ENTRYPOINT ["bash /workspace/entrypoint.sh"]
 
