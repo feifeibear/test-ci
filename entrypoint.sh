@@ -1,5 +1,4 @@
 #!/bin/sh -l
+set -xe
 
-echo "Hello $1"
-time=$(date)
-echo ::set-output name=time::$time
+python --version
