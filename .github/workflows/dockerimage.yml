@@ -15,7 +15,7 @@ jobs:
       with:
         fetch-depth: 1
     - name: Build the Docker image
-      run: sh ./tools/build_docker_cpu.sh 
+      run: docker build -f Dockerfile .
     - name: run unitest
       uses: ./
       id: run-cpu-unitest

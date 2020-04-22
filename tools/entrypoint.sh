@@ -1,3 +1,3 @@
 #!/bin/sh -l
 set -xe
-echo "`python test.py`"
+echo "python test.py"
