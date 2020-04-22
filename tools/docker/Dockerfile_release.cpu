@@ -15,6 +15,6 @@ RUN /opt/conda/bin/conda install pytorch cpuonly -c pytorch && \
 RUN pip --no-cache-dir install contexttimer future transformers docopt
 WORKDIR /workspace
 
-COPY ../../entrypoint.sh entrypoint.sh
+COPY entrypoint.sh entrypoint.sh
 ENTRYPOINT ["bash entrypoint.sh"]
 
