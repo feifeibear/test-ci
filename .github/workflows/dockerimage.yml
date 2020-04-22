@@ -9,10 +9,11 @@ on:
 jobs:
 
   build:
+    name: Build Turbo Compilation Env 
 
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: action/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file tools/docker/Dockerfile_release.cpu --tag my-image-name:$(date +%s)
+      run: sh ./tools/build_docker_cpu.sh 
