@@ -7,13 +7,15 @@ on:
     branches: [ master ]
 
 jobs:
-
   build:
     name: Build Turbo Compilation Env 
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 1
     - name: Build the Docker image
       run: sh ./tools/build_docker_cpu.sh 
+    - name: run unitest
+      uses: ./
+      id: run-cpu-unitest

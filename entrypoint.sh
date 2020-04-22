@@ -1,4 +1,3 @@
 #!/bin/sh -l
 set -xe
-
-python --version
+echo "`python test.py`"
